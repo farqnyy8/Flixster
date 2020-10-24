@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#aa651d</color>
+    <color name="colorPrimaryDark">#ee651d</color>
+    <color name="colorAccent">#aaaaaa</color>
+
+    <!-- colors that are the same for both modes -->
+    <color name="_primaryButtonBackground">#b5651d </color>
+    <color name="_primaryButtonTextColor">#F5F5F5</color>
+
+    <!-- dmode colors -->
+    <color name="_colorBackgroundPrimary">#F5F5F5</color>
+    <color name="_colorBackgroundSecondary">#BDBDBD</color>
+
+    <color name="_textColorPrimary">#212121</color>
+    <color name="_textColorSecondary">#424242</color>
+</resources>
