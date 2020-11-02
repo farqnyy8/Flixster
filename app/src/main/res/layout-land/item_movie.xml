@@ -39,5 +39,5 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:textSize="@dimen/text_normal"
         android:textColor="?android:textColorSecondary"
-        tools:text="@string/movie_default_description" />
+        tools:text="@string/movie_default_overview" />
 </RelativeLayout>

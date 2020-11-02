@@ -1,12 +1,16 @@
 package com.vogella.android.rxjava.flixster.ui.movie;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie {
 
     final public static String POSTER_PATH = "poster_path";
@@ -14,19 +18,26 @@ public class Movie {
     final public static String OVERVIEW = "overview";
     final public static String BACKDROP_PATH = "backdrop_path";
     final public static String VOTE_AVERAGE = "vote_average";
+    final public static String MOVIE_AS_STRING = "movie";
+    final public static String ID = "id";
 
-    String posterPath;
-    String backdropPath;
-    String title;
-    String overView;
-    double voteaverage;
+    private int movieId;
+    private String posterPath;
+    private String backdropPath;
+    private String title;
+    private String overView;
+    private double rating;
+
+    // empty constructor for parceler
+    public Movie() {}
 
     public Movie(JSONObject jsonObject) throws JSONException {
         backdropPath = jsonObject.getString(BACKDROP_PATH);
         posterPath = jsonObject.getString(POSTER_PATH);
         title = jsonObject.getString(TITLE);
         overView = jsonObject.getString(OVERVIEW);
-        voteaverage = jsonObject.getDouble(VOTE_AVERAGE);
+        rating = jsonObject.getDouble(VOTE_AVERAGE);
+        movieId = jsonObject.getInt(ID);
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -45,8 +56,8 @@ public class Movie {
         return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
     }
 
-    public double getVoteaverage() {
-        return voteaverage;
+    public double getRating() {
+        return rating;
     }
 
     public String getTitle() {
@@ -55,5 +66,9 @@ public class Movie {
 
     public String getOverView() {
         return overView;
+    }
+
+    public int getMovieId() {
+        return movieId;
     }
 }

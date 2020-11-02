@@ -24,5 +24,9 @@
     <dimen name="text_small">8sp</dimen>
     <dimen name="text_normal">16sp</dimen>
     <dimen name="text_large">24sp</dimen>
+    <dimen name="text_extra_large">32sp</dimen>
+
+    <!-- youtube layout height -->
+    <dimen name="youtube_view_height">250dp</dimen>
 
 </resources>

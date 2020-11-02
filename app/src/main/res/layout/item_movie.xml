@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/bg_movie"
+    android:id="@+id/movieItemContainer"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="@dimen/margin_default_double"
     android:layout_margin="@dimen/margin_default"
@@ -38,5 +39,5 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:textSize="@dimen/text_normal"
         android:textColor="?android:textColorSecondary"
-        tools:text="@string/movie_default_description" />
+        tools:text="@string/movie_default_overview" />
 </RelativeLayout>
