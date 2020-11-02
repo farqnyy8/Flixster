@@ -21,8 +21,8 @@ import okhttp3.Headers;
 
 public class ViewMovieDetailsActivity extends YouTubeBaseActivity {
 
-    public static final String YOUTUBE_API_KEY = "AIzaSyC3xppbRiQR_ix7_aotqzpvaXZV8NfNCgA";
-    public static final String VIDOES_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US";
+    public static final String YOUTUBE_API_KEY = "";
+    public static final String VIDOES_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=&language=en-US";
     public static final String TAG = "YouTubeClient";
 
     private static final String RESULTS = "results";
