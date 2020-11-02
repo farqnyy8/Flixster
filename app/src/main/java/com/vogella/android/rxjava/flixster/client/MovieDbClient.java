@@ -1,4 +1,4 @@
-package com.vogella.android.rxjava.flixster.service;
+package com.vogella.android.rxjava.flixster.client;
 
 import android.util.Log;
 
@@ -15,7 +15,7 @@ import java.util.List;
 
 import okhttp3.Headers;
 
-public class NetworkCallsHelper {
+public class MovieDbClient {
 
     public static void loadMovies(final MovieAdapter adapter, final List<Movie> movies, String url, final String tag)
     {

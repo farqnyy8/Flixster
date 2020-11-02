@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.vogella.android.rxjava.flixster.R;
-import com.vogella.android.rxjava.flixster.service.NetworkCallsHelper;
+import com.vogella.android.rxjava.flixster.client.MovieDbClient;
 import com.vogella.android.rxjava.flixster.ui.movie.Movie;
 import com.vogella.android.rxjava.flixster.ui.movie.MovieAdapter;
 
@@ -39,6 +39,6 @@ public class MainActivity extends AppCompatActivity {
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
         // get the data using the Api
-        NetworkCallsHelper.loadMovies(adapter, movies, NOW_PLAYING_URL, TAG);
+        MovieDbClient.loadMovies(adapter, movies, NOW_PLAYING_URL, TAG);
     }
 }
