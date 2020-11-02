@@ -1,4 +1,4 @@
-package com.vogella.android.rxjava.flixster.theme;
+package com.vogella.android.rxjava.flixster.utils.theme;
 
 import androidx.annotation.NonNull;
 

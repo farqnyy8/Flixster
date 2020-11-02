@@ -1,4 +1,4 @@
-package com.vogella.android.rxjava.flixster.adapters;
+package com.vogella.android.rxjava.flixster.ui.movie;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.vogella.android.rxjava.flixster.R;
-import com.vogella.android.rxjava.flixster.models.Movie;
 
 import java.util.List;
 

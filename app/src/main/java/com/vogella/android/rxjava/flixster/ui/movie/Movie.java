@@ -1,4 +1,4 @@
-package com.vogella.android.rxjava.flixster.models;
+package com.vogella.android.rxjava.flixster.ui.movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -9,11 +9,11 @@ import java.util.List;
 
 public class Movie {
 
-    final public static String POSTERPATH = "poster_path";
+    final public static String POSTER_PATH = "poster_path";
     final public static String TITLE = "title";
     final public static String OVERVIEW = "overview";
-    final public static String BACKDROPPATH = "backdrop_path";
-    final public static String VOTEAVERAGE = "vote_average";
+    final public static String BACKDROP_PATH = "backdrop_path";
+    final public static String VOTE_AVERAGE = "vote_average";
 
     String posterPath;
     String backdropPath;
@@ -22,11 +22,11 @@ public class Movie {
     double voteaverage;
 
     public Movie(JSONObject jsonObject) throws JSONException {
-        backdropPath = jsonObject.getString(BACKDROPPATH);
-        posterPath = jsonObject.getString(POSTERPATH);
+        backdropPath = jsonObject.getString(BACKDROP_PATH);
+        posterPath = jsonObject.getString(POSTER_PATH);
         title = jsonObject.getString(TITLE);
         overView = jsonObject.getString(OVERVIEW);
-        voteaverage = jsonObject.getDouble(VOTEAVERAGE);
+        voteaverage = jsonObject.getDouble(VOTE_AVERAGE);
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {

@@ -1,4 +1,4 @@
-package com.vogella.android.rxjava.flixster.theme;
+package com.vogella.android.rxjava.flixster.utils.theme;
 
 import android.os.Build;
 
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 public class ThemeChangeHelper {
 
-    public static final String SAVEDTHEME = "saved-theme";
+    public static final String SAVED_THEME = "saved-theme";
 
     public static void setAppTheme( ThemeType themePref) {
         switch (themePref) {

@@ -1,12 +1,11 @@
 package com.vogella.android.rxjava.flixster;
 
-
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.vogella.android.rxjava.flixster.theme.ThemeChangeHelper;
-import com.vogella.android.rxjava.flixster.theme.ThemeType;
+import com.vogella.android.rxjava.flixster.utils.theme.ThemeChangeHelper;
+import com.vogella.android.rxjava.flixster.utils.theme.ThemeType;
 
 public class FlixsterApp extends Application {
 
@@ -22,7 +21,7 @@ public class FlixsterApp extends Application {
                 PreferenceManager.getDefaultSharedPreferences(this);
         ThemeType appTheme = ThemeType.getThemeType(
                 sharedPreferences.getString(
-                        ThemeChangeHelper.SAVEDTHEME,
+                        ThemeChangeHelper.SAVED_THEME,
                         ThemeType.DefaultMode.toString()
                 )
         );

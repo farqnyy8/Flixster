@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="?android:colorBackground"
+    android:background="@drawable/bg_movie"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/margin_default_double"
+    android:layout_margin="@dimen/margin_default"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
+    
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="120dp"
+        android:layout_width="@dimen/movie_img_width"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="@dimen/margin_none"
+        android:layout_marginTop="@dimen/margin_none"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -20,20 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="@dimen/margin_default_half"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="24sp"
         android:textColor="?android:textColorPrimary"
-        tools:text="My Hero Academia: Heroes Rising" />
+        android:textSize="@dimen/text_large"
+        tools:text="@string/movie_default_title" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:textColor="?android:textColorSecondary"
+        android:layout_marginStart="@dimen/margin_default_half"
+        android:layout_marginTop="@dimen/margin_default_half"
         android:layout_toEndOf="@+id/ivPoster"
-        tools:text="Class 1-A visits Nabu Island where they finally get to do some real hero work. The place is so peaceful that it's more like a vacation … until they're attacked by a villain with an unfathomable Quirk! His power is eerily familiar, and it looks like Shigaraki had a hand in the plan. But with All Might retired and citizens' lives on the line, there's no time for questions. Deku and his friends are the next generation of heroes, and they're the island's only hope." />
+        android:textSize="@dimen/text_normal"
+        android:textColor="?android:textColorSecondary"
+        tools:text="@string/movie_default_description" />
 </RelativeLayout>
